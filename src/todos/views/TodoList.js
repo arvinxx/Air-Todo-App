@@ -2,14 +2,12 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import TodoItem from './TodoItem';
 
-import {toggleTodo} from '../actions'
+import {toggleTodo} from '../../AddTodo/actions'
 
 // todos 本身是一个参数，需要将其变成有效的 Arrays 则需要用 {}
 // 将其转换一遍变成 Arrays
 
 const TodoList = ({ todos,onToggleTodo }) => {
-  console.log(onToggleTodo);
-
   return (
     <ul className="todo-list">
       {todos.map(item => (

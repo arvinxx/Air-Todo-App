@@ -6,14 +6,12 @@ const TodoItem = ({ text, onToggle, completed, onRemove }) => {
   return (
     <div>
       <input
-        id="111"
-        className="hidden-toggle"
-        type="checkbox"
+        id="checkpoint"
+        className="toggle"
+        type="radio"
         {...checkedProp}
         onClick={onToggle}
       />
-      <span htmlFor="111"  className="toggle"   onClick={onToggle}/>
-
       <li
         className="todo-item"
         style={{
@@ -21,11 +19,14 @@ const TodoItem = ({ text, onToggle, completed, onRemove }) => {
         }}
         onClick={onToggle}
       >
-        <label className="text">
-          {text}
-        </label>
+        <label className="text">{text}</label>
       </li>
-      <img className="remove" src={'./assets/trash.svg'} onClick={onRemove} />
+      <img
+        className="remove"
+        alt=""
+        src={'./assets/trash.svg'}
+        onClick={onRemove}
+      />
     </div>
   );
 };

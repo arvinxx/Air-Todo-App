@@ -1,15 +1,15 @@
-.add-todo{
+.add-todo {
   position: absolute;
   bottom: 30px;
 }
 .new-todo {
   font-family: Roboto;
-  width: 466px;
+  width: 405px;
   border: none;
   display: flex;
   border-bottom: 1px solid #f2f2f2;
 
-  margin-left: 73px;
+  margin-left: 54px;
 
   background: rgba(0, 0, 0, 0.003);
   font-size: 36px;

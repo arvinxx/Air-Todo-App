@@ -2,21 +2,20 @@ import React, { PropTypes } from 'react';
 
 const TodoItem = ({ text, onToggle, completed, onRemove }) => {
   const checkedProp = completed ? { checked: true } : {};
-  console.log(onToggle);
   return (
-    <div>
+    <div className='todo-item-div'>
       <input
-        id="checkpoint"
         className="toggle"
         type="radio"
         {...checkedProp}
+        readOnly
         onClick={onToggle}
       />
       <li
-        className="todo-item"
-        style={{
-          textDecoration: completed ? 'line-through' : 'none'
-        }}
+        className={ completed? 'crossed todo-item' : 'todo-item'}
+        // style={{
+        //   textDecoration: completed ? 'line-through' : 'none'
+        // }}
         onClick={onToggle}
       >
         <label className="text">{text}</label>
@@ -32,7 +31,7 @@ const TodoItem = ({ text, onToggle, completed, onRemove }) => {
 };
 TodoItem.propTypes = {
   onToggle: PropTypes.func.isRequired,
-  // onRemove: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired,
   completed: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired
 };

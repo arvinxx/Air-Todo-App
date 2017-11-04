@@ -1,12 +1,12 @@
-
 import { createStore, combineReducers } from 'redux';
 
 import { reducer as addTodoReducer } from './AddTodo';
+import { reducer as filterReducer } from './filter';
 
 const reducer = combineReducers({
-  todos: addTodoReducer
+  todos: addTodoReducer,
+  filter: filterReducer
 });
-
 
 export default createStore(
   reducer,

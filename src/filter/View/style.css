@@ -1,33 +1,22 @@
-.filter-item {
-  float: left;
+.filter {
+  display: flex;
+  margin-top: 42px;
+}
+.filter-box {
+  margin: 0 auto;
+  display: flex;
+  border-radius: 20px;
   border: 1px solid #d9d9d9;
+}
 
+.filter-item {
   font-size: 18px;
-  text-align: center;
   letter-spacing: 1.5px;
   color: #d9d9d9;
   padding: 8px 12px;
   cursor: pointer;
 }
-.filter-box {
-  margin: 0 auto;
-  display: flex;
-}
-.filter {
-  display: flex;
-  text-align: center;
-  margin-top: 42px;
-}
-
-.filter-done {
-  border-radius: 20px 0 0 20px;
-  padding-left: 20px;
-}
-.filter-all {
-  border-radius: 0 20px 20px 0;
-  padding-right: 20px;
-}
-.filter-todo {
-  border-left: 0;
-  border-right: 0;
+.selected {
+  font-weight:400;
+  color: #3398F9;
 }

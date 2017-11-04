@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from './link';
+import { FilterTypes } from '../../constants';
 
 import './style.css';
 
@@ -6,9 +8,9 @@ function view() {
   return (
     <div className="filter">
       <div className="filter-box">
-        <div className="filter-item filter-done">DONE</div>
-        <div className="filter-item filter-todo">TODO</div>
-        <div className="filter-item filter-all">ALL</div>
+        <Link filter={FilterTypes.DONE}> {FilterTypes.DONE}</Link>
+        <Link filter={FilterTypes.TODO}>{FilterTypes.TODO}</Link>
+        <Link filter={FilterTypes.ALL}>{FilterTypes.ALL}</Link>
       </div>
     </div>
   );

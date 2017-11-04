@@ -15,7 +15,7 @@ h1 {
 }
 
 .todo-item {
-  width: 466px;
+  width: 405px;
   border-bottom: 1px solid #f2f2f2;
   margin-left: 10px;
   padding: 15px 0 11px 8px;
@@ -27,8 +27,6 @@ h1 {
   display: inline-block;
 }
 
-
-
 .toggle {
   margin: 13px 10px 30px 40px;
   width: 0;
@@ -38,27 +36,24 @@ h1 {
   text-align: center;
   vertical-align: middle;
   position: relative;
-
 }
 
-.toggle:before,.toggle:after {
-
+.toggle:before,
+.toggle:after {
   content: '';
   border-radius: 30px;
   box-sizing: border-box;
 
   display: block;
   position: absolute;
-  top:-3px;
+  top: -3px;
   left: -3px;
-  text-align:center;
-
+  text-align: center;
 }
 .toggle:before {
   width: 15px;
   height: 15px;
   background-color: #3398f9;
-
 
   -moz-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
@@ -96,8 +91,18 @@ h1 {
   font-weight: 400;
   color: #666666;
   user-select: none;
+  transition: 0.25s ease-in-out;
 }
-
+.crossed {
+  text-decoration: line-through;
+  text-decoration-color: rgba(51, 152, 249, 0.5);
+}
+.crossed > .text {
+  font-weight: 300;
+  font-size: 24px;
+  color: #d9d9d9;
+  transition: 250ms ease-in-out;
+}
 
 .todo-item,
 .text {
@@ -105,8 +110,16 @@ h1 {
 }
 
 .remove {
+  opacity: 0;
   display: inline-block;
 
   float: right;
   margin: 17px 20px 6px 0;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.todo-item-div:hover > .remove {
+  opacity: 1;
+  transition: 250ms ease-in-out;
 }

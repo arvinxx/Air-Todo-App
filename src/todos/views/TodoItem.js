@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 const TodoItem = ({ text, onToggle, completed, onRemove }) => {
   const checkedProp = completed ? { checked: true } : {};
   return (
-    <div className='todo-item-div'>
+    <div className="todo-item-div">
       <input
         className="toggle"
         type="radio"
@@ -12,10 +12,7 @@ const TodoItem = ({ text, onToggle, completed, onRemove }) => {
         onClick={onToggle}
       />
       <li
-        className={ completed? 'crossed todo-item' : 'todo-item'}
-        // style={{
-        //   textDecoration: completed ? 'line-through' : 'none'
-        // }}
+        className={completed ? 'crossed todo-item' : 'todo-item'}
         onClick={onToggle}
       >
         <label className="text">{text}</label>

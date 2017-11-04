@@ -1,7 +1,7 @@
 {
-  "name": "todo",
-  "version": "0.1.0",
-  "private": true,
+  "name": "air-todo",
+  "version": "1.0.0",
+  "homepage":"airtodo.arvinx.io",
   "devDependencies": {
     "react-scripts": "0.8.4",
     "redux-immutable-state-invariant": "^1.2.4"

@@ -1,7 +1,9 @@
 {
   "name": "air-todo",
   "version": "1.0.0",
+  "homepage": "http://arvinx.io/Air-Todo-App/",
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "react-scripts": "0.8.4",
     "redux-immutable-state-invariant": "^1.2.4"
   },
@@ -18,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
   }
 }

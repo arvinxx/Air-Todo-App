@@ -1,4 +1,4 @@
-# Air Todo
+# AIR TODO
 ![Air Todo](http://oxnc5ug9u.bkt.clouddn.com/pic/171104/KA451F8Fl6.png)
 Air Todo 是本人在学习 React&Redux 开发的第一个 App。
 
@@ -13,9 +13,15 @@ Air Todo 是本人在学习 React&Redux 开发的第一个 App。
 Demo地址：http://arvinx.io/Air-Todo-App
 
 ![Figma](http://oxnc5ug9u.bkt.clouddn.com/pic/171104/506mLILLHg.png)
-![设计流程图](http://oxnc5ug9u.bkt.clouddn.com/pic/171104/biLa2j9ce2.png)
-![本地调试结果](http://oxnc5ug9u.bkt.clouddn.com/pic/171104/jLj27Ahg7G.png)
 
-# 未来待办
--[] 适配手机端
--[] 优化动效
+![设计流程图](http://oxnc5ug9u.bkt.clouddn.com/pic/171104/biLa2j9ce2.png)
+
+![本地调试](http://oxnc5ug9u.bkt.clouddn.com/pic/171104/jLj27Ahg7G.png)
+
+
+![mark](http://oxnc5ug9u.bkt.clouddn.com/pic/171104/b7aLJfJkGb.png)
+
+![调试界面](http://oxnc5ug9u.bkt.clouddn.com/pic/171104/7AjbaDL1Ec.png)
+# 如果有空再优化的话
+- [ ]  适配手机端
+- [ ] 优化动效

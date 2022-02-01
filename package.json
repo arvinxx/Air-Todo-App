@@ -3,18 +3,18 @@
   "version": "1.0.0",
   "homepage": "http://arvinx.io/Air-Todo-App/",
   "devDependencies": {
-    "gh-pages": "^1.0.0",
+    "gh-pages": "1.2.0",
     "react-scripts": "0.8.4",
-    "redux-immutable-state-invariant": "^1.2.4"
+    "redux-immutable-state-invariant": "1.2.4"
   },
   "dependencies": {
-    "react": "^15.4.1",
-    "react-addons-perf": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-redux": "^5.0.1",
-    "redux": "^3.6.0",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "react": "15.7.0",
+    "react-addons-perf": "15.4.2",
+    "react-dom": "15.7.0",
+    "react-redux": "5.1.2",
+    "redux": "3.7.2",
+    "redux-logger": "3.0.6",
+    "redux-thunk": "2.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "http://arvinx.io/Air-Todo-App/",
   "devDependencies": {
-    "gh-pages": "^1.0.0",
+    "gh-pages": "4.0.0",
     "react-scripts": "0.8.4",
     "redux-immutable-state-invariant": "^1.2.4"
   },
